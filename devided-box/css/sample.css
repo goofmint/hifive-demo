@@ -1,0 +1,261 @@
+@charset 'utf-8';
+
+html,body {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+/************** ヘッダ ****************/
+.header {
+	border-bottom: solid 1px black;
+	min-width: 800px;
+	width: 100%;
+	overflow-x: visible;
+	background: #4c4c4c;
+	background: -moz-linear-gradient(top, #4c4c4c 0%, #595959 12%, #666666 25%, #474747
+		39%, #2c2c2c 50%, #000000 51%, #111111 60%, #2b2b2b 76%, #1c1c1c 91%,
+		#131313 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #4c4c4c),
+		color-stop(12%, #595959), color-stop(25%, #666666),
+		color-stop(39%, #474747), color-stop(50%, #2c2c2c),
+		color-stop(51%, #000000), color-stop(60%, #111111),
+		color-stop(76%, #2b2b2b), color-stop(91%, #1c1c1c),
+		color-stop(100%, #131313));
+	background: -webkit-linear-gradient(top, #4c4c4c 0%, #595959 12%, #666666 25%,
+		#474747 39%, #2c2c2c 50%, #000000 51%, #111111 60%, #2b2b2b 76%,
+		#1c1c1c 91%, #131313 100%);
+	background: -o-linear-gradient(top, #4c4c4c 0%, #595959 12%, #666666 25%, #474747
+		39%, #2c2c2c 50%, #000000 51%, #111111 60%, #2b2b2b 76%, #1c1c1c 91%,
+		#131313 100%);
+	background: -ms-linear-gradient(top, #4c4c4c 0%, #595959 12%, #666666 25%, #474747
+		39%, #2c2c2c 50%, #000000 51%, #111111 60%, #2b2b2b 76%, #1c1c1c 91%,
+		#131313 100%);
+	background: linear-gradient(to bottom, #4c4c4c 0%, #595959 12%, #666666 25%, #474747
+		39%, #2c2c2c 50%, #000000 51%, #111111 60%, #2b2b2b 76%, #1c1c1c 91%,
+		#131313 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c',
+		endColorstr='#131313', GradientType=0);
+	overflow-x: visible;
+	color: #fff;
+}
+
+.header .title {
+	font-size: 16px;
+	font-weight: 700;
+	text-shadow: 1px 1px 1px #ccc;
+	vertical-align: middle;
+}
+
+/************** AccordionPanel,DividedBox設定 ****************/
+.dividedBox .dividerHandler {
+	display: none !important;
+}
+
+.dividedBox>.divider {
+	background-color: #0c0c0c;
+}
+
+.dividedBox.horizontal>.divider {
+	cursor: col-resize;
+}
+
+.dividedBox.vertical>.divider {
+	cursor: row-resize;
+}
+
+.boxContent {
+	background-color: #f5fafa;
+}
+
+/************** その他共通設定 ****************/
+.desktop {
+	height: 100%;
+	width: 100%;
+	font-family: Meiryo;
+	font-size: 12px;
+	background: radial-gradient(#444 0, #222 100%);
+}
+
+/* 右下に配置する要素 */
+.position-corner-rb {
+	position: absolute;
+	right: 10px;
+	bottom: 0px;
+}
+
+/************** アプリケーション設定 *********/
+.shortcut {
+	min-width: 200px;
+}
+
+.filterForm label {
+	line-height: 2em;
+}
+
+.fullHeight {
+	height: 100%;
+}
+
+.detailScroll {
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+
+.confirmForm {
+	background-color: #ddd;
+	width: 100%;
+	padding: 10px;
+	line-height: 2em;
+}
+
+.fixBottom {
+	position: absolute;
+	bottom: 0;
+}
+
+.purchaseBox {
+	background-color: #fffffc;
+	padding: 10px;
+	border: 1px solid #ccc;
+	margin: 10px;
+}
+
+.purchaseBox.approved {
+	background-color: #eee;
+}
+
+.purchaseBox .approvedBadge {
+	display: none;
+}
+
+.purchaseBox.approved .approvedBadge {
+	display: block;
+}
+
+.purchaseBox.approved .confirm {
+	display: none;
+}
+
+/**** グリッドビュー ****/
+.filterForm {
+	padding: 5px 5px;
+}
+
+/**** 詳細ビュー ****/
+.detail {
+	font-size: 14px;
+}
+
+/********* グリッド *********/
+.grid {
+	background-color: #F3F8F8;
+	height: 100%;
+	width: 100%;
+	cursor: default;
+}
+
+.grid tr:nth-child(even) .gridCell {
+	background: #f2f2f2;
+}
+
+.gridCellFrame {
+	background-color: #F5FAFA;
+}
+
+.gridPropertyHeader {
+	background-image: -webkit-linear-gradient(top, #f9f9f9, #e3e4e6);
+	background-image: -moz-linear-gradient(top, #f9f9f9, #e3e4e6);
+	background-image: -ms-linear-gradient(top, #f9f9f9, #e3e4e6);
+	background-image: -o-linear-gradient(top, #f9f9f9, #e3e4e6);
+	background-image: linear-gradient(top, #f9f9f9, #e3e4e6);
+}
+
+.gridCell {
+	white-space: nowrap;
+	font-size: 12px;
+	line-height: 2em;
+	padding-left: 2px;
+}
+
+.gridCellFrame.warn {
+	background-color: #FFE0E1;
+}
+
+.gridCellFrame.warnCell>.gridCell {
+	color: red;
+}
+
+.gridCellFrame.gridSelectedCell>.gridCell {
+	background-color: #bbddf0;
+}
+
+.gridCellFrame.gridSelectedData>.gridCell {
+	background-color: #dfe8f6;
+}
+
+.gridCellFrame.gridFocusedData>.gridCell {
+	background-color: #ccf;
+}
+
+.gridCellFrame.inputError>.gridCell {
+	background-color: red;
+}
+
+.gridCellFrame.gridHeader>.gridCell {
+	text-align: left;
+	padding: 0 0 0 3px;
+}
+
+.gridCellFrame.gridTextCell>.gridCell {
+	text-align: left;
+	padding: 0 0 0 3px;
+}
+
+.gridCellFrame.gridNumberCell>.gridCell {
+	text-align: right;
+	padding: 0 3px 0 0;
+}
+
+.gridCellFrame.gridButtonCell>.gridCell {
+	text-align: center;
+}
+
+.gridCellFrame.disabledCell>.gridCell {
+	background-color: #D0D0D0;
+}
+
+.gridCellFrame.enabledCell>.gridCell {
+	background-color: yellow;
+}
+
+.gridCellFrame.secondRowCheckbox>.gridCell select {
+	visibility: hidden;
+}
+
+.gridCellFrame.revisionEnabledMiddleCell>.gridBottomBorder {
+	background-color: yellow;
+}
+
+.gridCellFrame.revisionEnabledMiddleRow>.gridBottomBorder {
+	background-color: inherit;
+}
+
+.gridCellFrame.revisionDisabledMiddleRow>.gridBottomBorder {
+	background-color: #D0D0D0;
+}
+
+/** カラム移動 **/
+.gridHeaderRowsBox .gridCell {
+	cursor: e-resize;
+}
+
+.gridHeaderRowsBox .gridCell .gridSortIcon {
+	cursor: default;
+}
+
+.trackend-sign {
+	position: absolute; /* trackmoveで入れ替え先を表す矢印のクラス */
+}
