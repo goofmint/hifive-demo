@@ -1,0 +1,80 @@
+@charset "UTF-8";
+
+.scrollBar {
+	background-color: #EEE;
+}
+
+.scrollBarArrow {
+	background-color: #EEE;
+}
+
+.scrollBarArrow:hover {
+	background-color: #DDD;
+}
+
+.scrollBarArrow.pressed {
+	background-color: #888;
+}
+
+.scrollBarArrow.disabled {
+	background-color: #EEE;
+}
+
+.scrollBarArrowIcon {
+	border-color: #888;
+}
+
+.scrollBarArrowIcon {
+	border-color: #444;
+}
+
+.scrollBarArrow.pressed>.scrollBarArrowIcon {
+	border-color: #EEE;
+}
+
+.scrollBarArrow.disabled>.scrollBarArrowIcon {
+	border-color: #CCC;
+}
+
+.scrollBarKnob {
+	background-color: #AAA;
+}
+
+.scrollBarKnob:hover {
+	background-color: #888;
+}
+
+.scrollBarKnob.tracking {
+	background-color: #666;
+}
+
+.gridSortArrow {
+	border-color: #AAA;
+}
+
+.gridSortArrow.enableSort {
+	border-color: #444;
+}
+.gridBorder {
+	background-color: #888;
+}
+
+.gridSelectedRangeEdge {
+	background-color: #88F;
+}
+
+.gridResizeColumnMarker {
+	cursor: col-resize;
+}
+
+.gridResizeColumnPreview {
+	background-color: #888;
+}
+
+.gridSelectedCell {
+	background-color: #EEF;
+}
+
+.gridMainBox > .virtualScrollBoxLoading:after {
+	content: "Loading..."
+}
