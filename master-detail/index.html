@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="pragma" content="no-cache" />
+<meta http-equiv="cache-control" content="no-cache" />
+<meta name="viewport" content="width=device-width">
+
+<!-- ライブラリCSS・JS -->
+
+<!-- IE8以下なら1系、それ以外なら2系のjQueryを使用する -->
+<!--[if lt IE 9]>
+<script src="lib/jquery/jquery-1.11.1.js"></script>
+<![endif]-->
+<!--[if gte IE 9]><!-->
+<script src="lib/jquery/jquery-2.1.1.js"></script>
+<!--<![endif]-->
+
+<!-- jstree -->
+<link rel="stylesheet" href="lib/jstree/themes/default/style.css" />
+<script type="text/javascript" src="lib/jstree/jstree.js"></script>
+
+<!-- bootstrap -->
+<link rel="stylesheet"
+	href="lib/bootstrap/3.3.2/css/bootstrap.min.css">
+<script src="lib/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+<!-- hifive -->
+<link rel="stylesheet" href="lib/hifive/h5.css" />
+<script src="lib/hifive/ejs-h5mod.js"></script>
+<script src="lib/ejs/1.0/view.js"></script>
+<!-- ヘルパーの拡張 -->
+<script src="lib/hifive/h5.dev.js"></script>
+<!-- IgniteUI -->
+<!-- jQueryUIが必要 -->
+<!-- <link href="lib/IgniteUI/css/themes/infragistics/infragistics.theme.css" -->
+<!-- 	rel="stylesheet" data-grid-demo-css="IgniteUI" /> -->
+<!-- <link href="lib/IgniteUI/css/structure/infragistics.css" -->
+<!-- 	rel="stylesheet" data-grid-demo-css="IgniteUI" /> -->
+<!-- <script src="lib/IgniteUI/js/infragistics.core.js"></script> -->
+<!-- <script src="lib/IgniteUI/js/infragistics.lob.js"></script> -->
+
+<!-- wijmo5 -->
+<!-- <link rel="stylesheet" href="lib/wijmo5/styles/wijmo.min.css" -->
+<!-- 	data-grid-demo-css="Wijmo5" /> -->
+<!-- <link rel="stylesheet" -->
+<!-- 	href="lib/wijmo5/styles/themes/wijmo.theme.simplex.min.css" -->
+<!-- 	data-grid-demo-css="Wijmo5" /> -->
+<!-- <script src="lib/wijmo5/controls/wijmo.min.js"></script> -->
+<!-- <script src="lib/wijmo5/controls/wijmo.grid.min.js"></script> -->
+
+<!-- datagrid -->
+<link rel="stylesheet" href="lib/hifive/ui/datagrid.css"
+	data-grid-demo-css="datagrid">
+<script type="text/javascript" src="lib/hifive/ui/datagrid.js"></script>
+
+<!-- hifive-ui -->
+<link rel="stylesheet"
+	href="lib/hifive/ui/DividedBox.css">
+<script src="lib/hifive/ui/DividedBox.js"></script>
+<link rel="stylesheet"
+	href="lib/hifive/ui/AccordionPanel.css">
+<script type="text/javascript"
+	src="lib/hifive/ui/AccordionPanel.js"></script>
+
+<!-- アプリCSS・JS -->
+<link href="css/sample.css" rel="stylesheet" />
+<script src="js/util.js"></script>
+<script src="js/grid/DatagridController.js"></script>
+<script src="js/grid/GridWrapperController.js"></script>
+<script src="js/GridViewerController.js"></script>
+<script src="js/DetailController.js"></script>
+<script src="js/TreeViewController.js"></script>
+<script src="js/AppPurchaseManagerLogic.js" /></script>
+<script src="js/AppPurchaseManagerController.js" /></script>
+
+<!-- <script src="js/GridDemoController.js" /></script> -->
+<script src="js/PageController.js" /></script>
+<script src="js/index.js"></script>
+</head>
+<body>
+	<div class="desktop dividedBox vertical">
+		<div class="header fixedSize"></div>
+		<div class="appRoot autoSize"></div>
+	</div>
+</body>
+</html>
