@@ -39,16 +39,6 @@
 		},
 		searchPurchaseDatas: function(query) {
 			return sample.util.ajax(sample.consts.url.SEARCH_WORKFLOW, query);
-		},
-		getPurchaseById: function(id) {
-			return sample.util.ajax(sample.consts.url.WORKFLOW, {
-				id: id
-			});
-		},
-		confirmByIds: function(ids) {
-			return sample.util.ajax(sample.consts.url.CONFIRM, {
-				ids: ids
-			});
 		}
 	};
 	h5.core.expose(controller);
